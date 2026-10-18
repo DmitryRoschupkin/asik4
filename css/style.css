@@ -26,35 +26,30 @@ body {
 }
 
 .trip-type-group {
-    background-color: #E6EFEC !important;
-    border: 2px solid #0F6B5F !important;
-    border-radius: 50rem !important;
     display: inline-flex;
     overflow: hidden;
+    border: 1px solid #0F6B5F;
+    border-radius: 50rem;
+    background: #fff;
 }
 
 .trip-type-group .btn {
     color: #0F6B5F;
-    background-color: transparent;
-    font-weight: bold;
+    background: transparent;
+    font-weight: 600;
     border: none !important;
+    border-radius: 0 !important;
     box-shadow: none !important;
-    transition: all 0.2s ease-in-out;
-    border-radius: 50rem !important;
+    transition: background-color 0.2s ease;
 }
 
-.trip-type-group .btn + .btn {
-    border-left: 1px solid #D2E2DC !important;
-    border-radius: 0 50rem 50rem 0 !important;
+.trip-type-group label[for="roundtrip"] {
+    border-left: 1px solid #0F6B5F !important;
 }
 
 .trip-type-group .btn-check:checked + .btn {
     color: #fff;
-    background-color: #0F6B5F !important;
-}
-
-.trip-type-group .btn:first-child {
-    border-radius: 50rem 0 0 50rem !important;
+    background: #0F6B5F;
 }
 
 .form-check-input:checked {
