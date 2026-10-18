@@ -71,3 +71,18 @@ body {
     background: #F2A93B;
     border-color: #F2A93B;
 }
+
+@media (max-width: 700px) {
+    .trip-type-wrapper {
+        width: 100%;
+    }
+
+    .trip-type-group {
+        display: flex;
+        width: 100%;
+    }
+
+    .trip-type-group .btn {
+        flex: 1;
+    }
+}
