@@ -11,119 +11,119 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container my-4 rounded-4 shadow-lg p-0 overflow-hidden">
-        <div class="title text-white p-4">
-            <h1 class="h3 mb-0 fw-bold">Book a train ticket!</h1>
-        </div>
-        <div class="form-wrapper p-4 p-md-5">
-            <form>
-                <div class="mb-4">
-                    <div class="btn-group trip-type-group" role="group" aria-label="Trip type">
-                        <input type="radio" class="btn-check" name="trip-type" id="oneway" autocomplete="off" checked>
-                        <label class="btn btn-outline-success px-4 py-2" for="oneway">One way</label>
-
-                        <input type="radio" class="btn-check" name="tripType" id="roundtrip" autocomplete="off">
-                        <label class="btn btn-outline-success px-4 py-2" for="roundtrip">Round trip</label>
-                    </div>
-                </div>
-
-                <div class="row mb-3 g-3 align-items-end">
-                    <div class="col-12 col-md-5">
-                        <label for="from" class="form-label fw-semibold">From</label>
-                        <input type="text" class="form-control" id="from" value="Astana" required>
-                    </div>
-                    <div class="col-12 col-md-2 text-center d-none d-md-block text-muted">
-                        <span class="fw-bold">to</span>
-                    </div>
-                    <div class="col-12 col-md-5">
-                        <label for="to" class="form-label fw-semibold">To</label>
-                        <input type="text" class="form-control" id="to" value="Almaty" required>
-                    </div>
-                </div>
-
-                <div class="row mb-3 g-3">
-                    <div class="col-12 col-md-4">
-                        <label for="departure" class="form-label fw-semibold">Departure</label>
-                        <input type="date" class="form-control" id="departure" required>
-                    </div>
-
-                    <div class="col-12 col-md-4">
-                        <label for="return" class="form-label fw-semibold">Return</label>
-                        <input type="date" class="form-control" id="return" required>
-                    </div>
-
-                    <div class="col">
-                        <label for="Passengers" class="form-label fw-semibold">Passengers</label>
-                        <select class="form-select" id="passengers">
-                            <option selected>1 adult</option>
-                            <option>2 adults</option>
-                            <option>3 adults</option>
-                            <option>4 adults</option>
-                            <option>5 adults</option>
-                            <option>6 adults</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="mb-3">
-                    <label class="form-label fw-semibold d-block">Carriage class</label>
-                    <div class="row g-2">
-                        <div class="col-auto me-4">
-                            <div class="form-check">
-                                <input type="radio" id="seat" class="form-check-input" name="carriageClass" required>
-                                <label for="seat" class="form-check-label">Seat</label>
-                            </div>
-                        </div>
-                        <div class="col-auto me-4">
-                            <div class="form-check">
-                                <input type="radio" id="coupe" class="form-check-input" name="carriageClass" required>
-                                <label for="coupe" class="form-check-label">Coupe</label>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <div class="form-check">
-                                <input type="radio" id="sleeper" class="form-check-input" name="carriageClass" required>
-                                <label for="sleeper" class="form-check-label">Sleeper</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mb-3 g-3">
-                    <div class="col-12 col-md-6">
-                        <label for="phone" class="form-label fw-semibold">Phone</label>
-                        <div class="input-group">
-                            <span class="input-group-text bg-success text-white border-success">+7</span>
-                            <input type="tel" class="form-control" id="phone" placeholder="701 234 56 78" required>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6">
-                        <label for="email" class="form-label fw-semibold">Email</label>
-                        <input type="text" class="form-control" id="email" placeholder="name@example.com" required>
-                    </div>
-                </div>
-
-                <div class="mb-4">
-                    <div class="form-check mb-2">
-                        <input class="form-check-input" type="checkbox" id="switchStandard">
-                        <label class="form-check-label" for="switchStandard">Also send the ticket by SMS</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="rulesAgreement" required>
-                        <label class="form-check-label" for="rulesAgreement">I agree with the carriage rules</label>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-column flex-md-row gap-3 justify-content-end">
-                    <button type="reset" class="btn btn-light border px-4 py-2 order-2 order-md-2">Clear</button>
-                    <button type="submit" class="btn btn-warning text-white fw-semibold px-5 py-2 order-1 order-md-2 btn-submit">Find trains</button>
-                </div>
-
-            </form>
-        </div>
+<div class="container my-4 rounded-4 shadow-lg p-0 overflow-hidden">
+    <div class="title text-white p-4">
+        <h1 class="h3 mb-0 fw-bold">Book a train ticket</h1>
     </div>
+    <div class="form-wrapper p-4 p-md-5">
+        <form>
+            <div class="mb-4">
+                <div class="btn-group trip-type-group rounded-pill" role="group" aria-label="Trip type" style="background-color: #E6EFEC;">
+                    <input type="radio" class="btn-check" name="tripType" id="oneway" autocomplete="off" checked>
+                    <label class="btn px-4 py-2 rounded-pill" for="oneway">One way</label>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+                    <input type="radio" class="btn-check" name="tripType" id="roundtrip" autocomplete="off">
+                    <label class="btn px-4 py-2 rounded-pill" for="roundtrip">Round trip</label>
+                </div>
+            </div>
+
+            <div class="row mb-3 g-3 align-items-end">
+                <div class="col-12 col-md-5">
+                    <label for="from" class="form-label fw-semibold text-dark">From</label>
+                    <input type="text" class="form-control" id="from" value="Astana" required>
+                </div>
+                <div class="col-12 col-md-2 text-center d-none d-md-block text-muted">
+                    <span class="fw-bold">to</span>
+                </div>
+                <div class="col-12 col-md-5">
+                    <label for="to" class="form-label fw-semibold text-dark">To</label>
+                    <input type="text" class="form-control" id="to" value="Almaty" required>
+                </div>
+            </div>
+
+            <div class="row mb-3 g-3">
+                <div class="col-12 col-md-4">
+                    <label for="departure" class="form-label fw-semibold text-dark">Departure</label>
+                    <input type="date" class="form-control" id="departure" required>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <label for="return" class="form-label fw-semibold text-dark">Return</label>
+                    <input type="date" class="form-control" id="return" required>
+                </div>
+
+                <div class="col">
+                    <label for="passengers" class="form-label fw-semibold text-dark">Passengers</label>
+                    <select class="form-select" id="passengers">
+                        <option selected>1 adult</option>
+                        <option>2 adults</option>
+                        <option>3 adults</option>
+                        <option>4 adults</option>
+                        <option>5 adults</option>
+                        <option>6 adults</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-semibold d-block text-dark">Carriage class</label>
+                <div class="row g-2">
+                    <div class="col-auto me-4">
+                        <div class="form-check">
+                            <input type="radio" id="seat" class="form-check-input" name="carriageClass" required>
+                            <label for="seat" class="form-check-label text-dark">Seat</label>
+                        </div>
+                    </div>
+                    <div class="col-auto me-4">
+                        <div class="form-check">
+                            <input type="radio" id="coupe" class="form-check-input" name="carriageClass" required>
+                            <label for="coupe" class="form-check-label text-dark">Coupé</label>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input type="radio" id="sleeper" class="form-check-input" name="carriageClass" required>
+                            <label for="sleeper" class="form-check-label text-dark">Sleeper</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3 g-3">
+                <div class="col-12 col-md-6">
+                    <label for="phone" class="form-label fw-semibold text-dark">Phone</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-success text-white border-success">+7</span>
+                        <input type="tel" class="form-control" id="phone" placeholder="701 234 56 78" required>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <label for="email" class="form-label fw-semibold text-dark">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="name@example.com" required>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <div class="form-check form-switch mb-2">
+                    <input class="form-check-input" type="checkbox" role="switch" id="switchStandard">
+                    <label class="form-check-label text-dark" for="switchStandard">Also send the ticket by SMS</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="rulesAgreement" required>
+                    <label class="form-check-label text-dark" for="rulesAgreement">I agree with the carriage rules</label>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row gap-3 justify-content-end">
+                <button type="reset" class="btn btn-light border px-4 py-2 order-2 order-md-1">Clear</button>
+                <button type="submit" class="btn btn-warning text-white fw-semibold px-5 py-2 order-1 order-md-2 btn-submit">Find trains</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
